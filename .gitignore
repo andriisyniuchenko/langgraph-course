@@ -3,3 +3,12 @@ __pycache__/
 *.pyc
 .env
 .idea/
+
+
+*.py[cod]
+*$py.class
+
+.chroma/*
+.chroma
+
+*.so
