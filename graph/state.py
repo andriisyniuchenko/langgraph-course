@@ -1,4 +1,5 @@
-from typing import List, TypedDict
+import operator
+from typing import Annotated, List, TypedDict
 
 
 class GraphState(TypedDict):
@@ -15,4 +16,4 @@ class GraphState(TypedDict):
     question: str
     generation: str
     web_search: bool
-    documents: List[str]
+    documents: Annotated[List[str], operator.add]
